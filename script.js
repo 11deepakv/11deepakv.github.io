@@ -43,3 +43,20 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+
+
+var show_active = document.getElementById('show_active');
+var show_if = document.getElementById('show_if');
+
+var i = 0;
+show_active.addEventListener('click', ()=>{
+    if(i%2==0){
+        show_if.style.display='grid';
+        show_active.innerText = 'Show Less'
+    }if(i%2!=0){
+        show_if.style.display='none';
+        show_active.innerText = 'Show More'
+    }
+    i++;
+    console.log(i);
+})

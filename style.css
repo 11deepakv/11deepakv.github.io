@@ -221,6 +221,10 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+#show_if{
+    display: none;
+}
+
 .work{
     border-radius: 10px;
     position: relative;
@@ -288,12 +292,10 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background 0.5s;
+    background: #ff004f;
+    cursor: pointer;
 }
 
-.btn:hover{
-    background: #ff004f;
-}
 
 /* Contact */
 .contact-left{
